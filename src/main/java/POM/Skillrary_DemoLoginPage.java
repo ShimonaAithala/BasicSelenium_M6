@@ -2,22 +2,21 @@ package POM;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class Skillrary_DemoLoginPage
 {
 	//declaration
-	//address of selenium training
+	//address of Selenium training
 	@FindBy(xpath="(//a[text()='Selenium Training'])[1]")
 	private WebElement seleniumtraining;
 	
-	//address of course webelement
+	//address of course WebElement
 	@FindBy(id="course")
 	private WebElement coursetab;
 	
-	//address of drop_down
+	//address of select category drop_down
 	@FindBy(name="addresstype")
 	private WebElement coursedd;
 	
@@ -30,7 +29,7 @@ public class Skillrary_DemoLoginPage
 
 	
 	//utilization
-	//to perform mouse hovering getter methods needs to be used
+	//to perform mouse hovering getter method need to be used
 	public WebElement getCoursetab() 
 	{
 		return coursetab;
@@ -42,7 +41,7 @@ public class Skillrary_DemoLoginPage
 	}
 
 
-	//for dropdown also we need to take getter method
+	//for drop_down also we need to take getter method
 	public WebElement getCoursedd() 
 	{
 		return coursedd;
